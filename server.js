@@ -9,3 +9,9 @@ const messagesHandler = handler.create(dbsMap);
 
 repSocket.bind(port);
 repSocket.on('message', messagesHandler);
+
+exports.endConnection = function(){
+    repSocket.close();
+    process.exit(0);
+}
+
