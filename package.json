@@ -19,9 +19,7 @@
   "dependencies": {
     "axon": "^2.0.3",
     "errio": "^1.2.2",
-    "kill-port": "^1.5.1",
     "nedb": "^1.8.0",
-    "ps-node": "^0.1.6"
   },
   "devDependencies": {
     "eslint": "^3.18.0",
