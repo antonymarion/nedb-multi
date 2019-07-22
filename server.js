@@ -6,7 +6,7 @@ const dbsMap = new Map();
 const repSocket = axon.socket('rep');
 const messagesHandler = handler.create(dbsMap);
 
-// do nothing
+// bind socket to port
 repSocket.bind(port);
 repSocket.on('message', messagesHandler);
 
