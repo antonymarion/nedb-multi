@@ -6,7 +6,7 @@ const dbsMap = new Map();
 const repSocket = axon.socket('rep');
 const messagesHandler = handler.create(dbsMap);
 
-// bind socket to port 
+// do nothing
 repSocket.bind(port);
 repSocket.on('message', messagesHandler);
 
@@ -16,7 +16,7 @@ exports.endConnection = function (callback) {
     const pid = parseInt(repSocket.settings.identity);
 
     repSocket.close();
-    process.kill(pid);
+    // process.kill(pid);
     callback();
     //
 
